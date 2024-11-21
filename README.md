@@ -30,6 +30,42 @@ The Cinema App is a comprehensive platform designed to streamline the management
 - **Frontend**: React Native, Tailwind CSS
 - **Authentication**: JSON Web Tokens (JWT)
 
+
+
+## Backend Structure
+
+```
+backend/
+│
+├── config/
+│   └── database.js         # Database connection configuration
+│
+├── models/                 # Mongoose schemas
+│   ├── User.js            
+│   ├── Movie.js            
+│	├── Theater.js         
+│   └── Showtime.js         
+│
+├── routes/                 # API route handlers
+│   ├── authRoutes.js       # Authentication routes
+│   ├── theaterRoutes.js    # theater-related routes
+│   ├── showtimeRoutes.js   # showtime-related routes
+│   └── movieRoutes.js      # Movie-related routes
+│
+├── middleware/             
+│   └── authMiddleware.js   
+│
+├── controllers/            # Business logic
+│   ├── authController.js   # Authentication logic
+│   └── movieController.js  # Movie-related logic
+│
+├── .env                    # Environment variables
+├── server.js               # Main server file
+└── package.json            # Project dependencies
+```
+
+##  
+
 ## Database Schema
 The Cinema App uses a MongoDB database with the following collections:
 
@@ -392,6 +428,8 @@ If you'd like to contribute to the Cinema App, please follow these steps:
 3. Make your changes and commit them
 4. Push your changes to your forked repository
 5. Create a pull request to the main repository
+
+
 
 
 
