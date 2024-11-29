@@ -12,7 +12,6 @@ import {
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import authService from '../src/api/authService';
 
-// Datos simulados de compras anteriores
 const MOCK_PURCHASES = [
   {
     id: '1',
@@ -32,7 +31,6 @@ const MOCK_PURCHASES = [
   },
 ];
 
-// Géneros preferidos simulados
 const GENRES = [
   'Acción',
   'Aventura',

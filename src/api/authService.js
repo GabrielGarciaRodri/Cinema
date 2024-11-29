@@ -1,23 +1,14 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-// Asegúrate de cambiar esta URL por la de tu servidor cuando lo implementemos
 const API_URL = 'http://192.168.56.1:5000/api'; 
 
 const authService = {
   async register(name, email, password) {
     try {
-      // Por ahora, simularemos el registro
       console.log('Registro:', { name, email, password });
       return { message: 'Registro exitoso' };
-      
-      // Cuando tengamos el backend:
-      /*const response = await axios.post(`${API_URL}/auth/register`, {
-        name,
-        email,
-        password
-      });
-      return response.data;*/
+
     } catch (error) {
       throw new Error(error.response?.data?.message || 'Error en el registro');
     }
@@ -39,7 +30,6 @@ const authService = {
       
       return { token: mockToken, user: mockUser };
       
-      // Cuando tengamos el backend:
       /*const response = await axios.post(`${API_URL}/auth/login`, {
         email,
         password

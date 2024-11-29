@@ -12,7 +12,6 @@ const ROWS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
 const SEATS_PER_ROW = 8;
 const SEAT_PRICE = 12.99;
 
-// Simulación de asientos ocupados
 const OCCUPIED_SEATS = ['A3', 'A4', 'C5', 'D7', 'F2', 'G3'];
 
 const SeatSelectionScreen = ({ route, navigation }) => {
